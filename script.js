@@ -55,3 +55,16 @@ function digitalTimer() {
 digitalTimer()
 
 
+function closeSidebar() {
+  let cl = document.querySelector('.sidebar');
+  if(cl){
+    cl.style.display = 'none'
+  }
+}
+
+function displaySidebar() {
+  let cl = document.querySelector('.sidebar');
+  if(cl){
+    cl.style.display = 'block'
+  }
+}

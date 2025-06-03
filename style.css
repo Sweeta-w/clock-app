@@ -8,32 +8,104 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
-  background-color: darkslategray;
-  color: #fff;
+  padding: 10px;
+  /* background-color: #73946B; */
+  background-color: #D2D0A0;
+  /* color: #9EBC8A; */
+  color: #537D5D;
 
 }
 .nav ul {
+  
   list-style: none;
   display: flex;
-  gap: 16px;
-  color: #fff;
+  /* gap: 16px; */
+  
 }
 
 .nav ul li {
   list-style-type: none;
   
 }
-li a {
+.nav li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  color: #537D5D;
+  font-size: 1.25rem;
   text-transform: capitalize;
   letter-spacing: 1px;
+  padding: 16px;
   
 }
+.nav li a:hover {
+  background-color: #537D5D;
+  color: #fff;
+}
+
+.nav ul li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: #fff;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.4s ease-in-out;
+  
+}
+
+/* Close icon container aligned to right */
+.close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: 1px solid #73946B;
+  padding: 16px 8px;
+  margin: 5px 0;
+  color: #537D5D;
+  font-weight: 500;
+}
+
+.sidebar li a:hover {
+  background-color: #D2D0A0;
+
+}
+.menu {
+  display: none;
+}
+
 .logo {
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 2px;
 
 }
 
@@ -42,7 +114,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #212121;
+  background-color: #537D5D;
   color: #fff;
 }
 .clock-container {
@@ -55,7 +127,7 @@ main {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 30px rgba(0, 0, 0, .9);
+  box-shadow: 0 0 30px #D2D0A0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +195,7 @@ main {
   text-transform: uppercase;
   width: 100px;
   height: 84px;
-  background-color: hsl(160, 85%, 42%);
+  background-color: #9EBC8A;
   font-size: 2.75rem;
   font-weight: bold;
   
@@ -132,6 +204,16 @@ main {
 #text {
   height: 33px;
   font-size: 1rem;
-  background-color: hsl(160, 85%, 32%);
+  background-color: #73946B;
   font-weight: 500;
+}
+
+@media (max-width: 550px) {
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  
 }
