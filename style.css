@@ -8,11 +8,11 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 16px 24px;
   /* background-color: #73946B; */
-  background-color: #D2D0A0;
+  background-color: #1b1a1a;
   /* color: #9EBC8A; */
-  color: #537D5D;
+  color: #e50914;
 
 }
 .nav ul {
@@ -29,16 +29,17 @@ nav {
 }
 .nav li a {
   text-decoration: none;
-  color: #537D5D;
+  color: #e50914;
   font-size: 1.25rem;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding: 16px;
+  transition: color ease-in .4s, text-decoration ease-in-out .3s;
   
 }
 .nav li a:hover {
-  background-color: #537D5D;
   color: #fff;
+  text-decoration: underline;
 }
 
 .nav ul li:first-child {
@@ -58,6 +59,7 @@ nav {
   display: flex;
   flex-direction: column;
   transition: right 0.4s ease-in-out;
+  display: none;
   
 }
 
@@ -88,15 +90,18 @@ nav {
   display: block;
   width: 100%;
   text-decoration: none;
-  border-bottom: 1px solid #73946B;
+  border-bottom: 2px solid #e50914;
   padding: 16px 8px;
   margin: 5px 0;
-  color: #537D5D;
+  color: #e50914;
   font-weight: 500;
+  transition: background-color ease-in .3s;
 }
 
 .sidebar li a:hover {
-  background-color: #D2D0A0;
+  background-color: hsl(357, 92%, 49%);
+  color: #fff;
+  
 
 }
 .menu {
@@ -114,7 +119,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #537D5D;
+  background-color: #000;
   color: #fff;
 }
 .clock-container {
@@ -127,7 +132,7 @@ main {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 30px #D2D0A0;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.55);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +200,7 @@ main {
   text-transform: uppercase;
   width: 100px;
   height: 84px;
-  background-color: #9EBC8A;
+  background-color: hsl(357, 92%, 62%);
   font-size: 2.75rem;
   font-weight: bold;
   
@@ -204,7 +209,7 @@ main {
 #text {
   height: 33px;
   font-size: 1rem;
-  background-color: #73946B;
+  background-color: hsl(357, 92%, 47%);
   font-weight: 500;
 }
 
