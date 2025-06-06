@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <div>
     <nav>
@@ -19,9 +20,7 @@
           <li><a href="index.html">Analog</a></li>
           <li><a href="digital.html">Digital</a></li>
           <li><a href="timer.html">Timer</a></li>
-          <li><a href="#">Alarm</a></li>
-          <li><a href="#"></a></li>
-
+         
         </ul>
       </div>
       <div class="menu">
@@ -37,12 +36,29 @@
         <li><a href="index.html">Analog</a></li>
         <li><a href="digital.html">Digital</a></li>
         <li><a href="timer.html">Timer</a></li>
-        <li><a href="#">Alarm</a></li>
       </ul>
     </div>
 
   </div>
-  
+  <main id="timer-container">
+    <h1>Set Timer</h1>
+    <div class="stopWatch">
+      <div class="timer">
+        00 : 00 : 00
+      </div>
+
+    </div>
+    <div class="buttons">
+      <button id="stopbtn"><i class="fas fa-stop" ></i>
+      </button>
+      <button id="startbtn"><i class="fas fa-play"></i>
+      </button>
+      <button id="resetbtn"><i class="fas fa-redo"></i></button>
+    </div>
+
+  </main>
+
   <script src="script.js"></script>
 </body>
+
 </html>

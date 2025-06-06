@@ -213,6 +213,43 @@ main {
   font-weight: 500;
 }
 
+/* timer design */
+#timer-container {
+  flex-direction: column;
+}
+.stopWatch {
+  padding: 20px 24px;
+  background-color: #e50914;
+  border-radius: 10px;
+  margin: 16px 0;
+}
+
+.stopWatch .timer {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.buttons button {
+  margin: 20px 5px;
+  border-radius: 15px;
+  transition: background-color ease .3s;
+
+}
+.buttons button i {
+  font-size: 36px;
+  color: #e50914;
+  padding: 16px;
+  transition: color ease .4s;
+  
+}
+.buttons button:hover {
+  background-color: hsl(357, 92%, 50%);
+  cursor: pointer;
+}
+.buttons button i:hover {
+  color: #fff;
+
+}
+
 @media (max-width: 550px) {
   .menu {
     display: block;
