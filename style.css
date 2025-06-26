@@ -9,9 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 16px 24px;
-  /* background-color: #73946B; */
   background-color: #1b1a1a;
-  /* color: #9EBC8A; */
   color: #e50914;
 
 }
